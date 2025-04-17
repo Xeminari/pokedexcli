@@ -24,14 +24,7 @@ type EncounterMethod struct {
 	Name string `json:"name"`
 	URL  string `json:"url"`
 }
-type Version struct {
-	Name string `json:"name"`
-	URL  string `json:"url"`
-}
-type VersionDetails struct {
-	Rate    int     `json:"rate"`
-	Version Version `json:"version"`
-}
+
 type EncounterMethodRates struct {
 	EncounterMethod EncounterMethod  `json:"encounter_method"`
 	VersionDetails  []VersionDetails `json:"version_details"`
